@@ -2,6 +2,14 @@
 
 
 [[projects]]
+  digest = "1:cf31692c14422fa27c83a05292eb5cbe0fb2775972e8f1f8446a71549bd8980b"
+  name = "github.com/pkg/errors"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "ba968bfe8b2f7e042a574c888954fccecfa385b4"
+  version = "v0.8.1"
+
+[[projects]]
   digest = "1:5dff1a0d6e59c6ada3ab630d0926c4d7665a74a27c559e4001189ca2f5026d1c"
   name = "golang.org/x/text"
   packages = [
@@ -21,6 +29,7 @@
   analyzer-name = "dep"
   analyzer-version = 1
   input-imports = [
+    "github.com/pkg/errors",
     "golang.org/x/text/encoding/japanese",
     "golang.org/x/text/transform",
   ]

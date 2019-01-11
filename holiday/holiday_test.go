@@ -5,7 +5,7 @@ import (
 	"time"
 )
 
-func TestIsHoliday(t *testing.T) {
+func TestGetHolidayName(t *testing.T) {
 	cases := []struct {
 		date   time.Time
 		result string
@@ -15,7 +15,7 @@ func TestIsHoliday(t *testing.T) {
 	}
 
 	for _, c := range cases {
-		if IsHoliday(c.date) != c.result {
+		if result, _ := GetHolidayName(c.date); result != c.result {
 			t.Error(c.result)
 		}
 	}
